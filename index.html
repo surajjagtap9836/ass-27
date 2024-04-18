@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+<style>
+.active{
+    border: 2px solid black ;
+    border-radius: 5px;
+
+}
+
+.img{
+    height: 50px;
+    margin: 0px 310px;
+    cursor: pointer;
+}
+.img-light {
+
+    background-color: whitesmoke;
+    color: black;
+   
+
+}
+.img-dark{
+
+    background-color:black;
+    color: white;
+    
+    
+}
+</style>
+
+</head>
+<body id="body" >
+    <h1 style="text-align: center;">Dark mode and light mode in js by using DOM</h1>
+    <img src="light.png" class="img " id="light mode" onclick="light()">
+    <img src="moon.png" class="img  " id="dark mode" onclick="dark()" >
+
+
+    <div>
+        <p style="font-size: 25px;">Leati Joseph Anoaʻi is an American professional wrestler and former football player. As a wrestler, he has been signed to WWE since 2010, and currently performs on a part-time basis on the SmackDown brand under the ring name Roman Reigns. He is the leader of The Bloodline stable and a member of the Anoaʻi family. Wikipedia<br>
+            Born: 25 May 1985 (age 38 years), Pensacola, Florida, United States<br>
+            Spouse: Galina Becker (m. 2014)<br>
+            Weight: 130 kg<br>
+            Children: Joelle Anoa'i<br>
+            Height: 1.91 m<br>
+            Career end: 2008</p>
+    </div>
+
+
+<script>
+  
+  function light(){
+   const darking = document.getElementById("light mode")
+   darking.classList.add("active")
+
+   const lightm = document.getElementById("body")
+   lightm.classList.add("img-light");
+
+   const li= document.getElementById("body")
+   li.classList .remove("img-dark")
+
+  }
+
+ function dark(){
+
+    const darking = document.getElementById("dark mode")
+   darking.classList.add("actived");
+   
+   const darkingm = document.getElementById("dark mode")
+   darkingm.classList.remove("actived")
+
+   const darkm = document.getElementById("body")
+   darkm.classList .add("img-dark")
+
+ }
+
+
+</script>
+
+    
+</body>
+</html>
